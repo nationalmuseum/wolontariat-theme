@@ -1,0 +1,279 @@
+/* 
+Theme Name:		 Wolontariat
+Theme URI:		 http://realhe.ro
+Description:	 Wariacja na potrzeby Działu Edukacji. 
+Author:			 Konrad Fedorczyk
+Author URI:		 http://childthemegenerator.com/
+Template:		 illustratr
+Version:		 1.0.1
+Text Domain:	 Illustratr-child
+-------------------------------------------------------------- */ 
+
+/* =Theme customization starts here
+------------------------------------------------------- */
+@font-face {
+	font-family: 'suisse_antique';
+	src: url('//files.mnw.art.pl/cdn/font/SuisseBPIntlAntique.eot');
+	src: url('//files.mnw.art.pl/cdn/font/SuisseBPIntlAntique.eot?#iefix') format('embedded-opentype'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlAntique.woff') format('woff'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlAntique.ttf') format('truetype'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlAntique.svg#SuisseBPIntlAntique') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+@font-face {
+	font-family: 'suisse_regular';
+	src: url('//files.mnw.art.pl/cdn/font/SuisseBPIntlRegular.eot');
+	src: url('//files.mnw.art.pl/cdn/font/SuisseBPIntlRegular.eot?#iefix') format('embedded-opentype'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlRegular.woff') format('woff'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlRegular.ttf') format('truetype'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlRegular.svg#SuisseBPIntlRegular') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+@font-face {
+	font-family: 'suisse_thin';
+	src: url('//files.mnw.art.pl/cdn/font/SuisseBPIntlThin.eot');
+	src: url('//files.mnw.art.pl/cdn/font/SuisseBPIntlThin.eot?#iefix') format('embedded-opentype'), url('//files.mnw.art.pl/cdn/font/SuisseBpIntlThin.woff') format('woff'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlThin.ttf') format('truetype'), url('//files.mnw.art.pl/cdn/font/SuisseBPIntlThin.svg#SuisseBPIntlThin') format('svg');
+	font-weight: normal;
+	font-style: normal
+}
+#masthead {
+	padding: 40px;
+}
+.menu-wrapper {
+	margin-top: 60px;
+}
+.menu-wrapper > ul > li > a {
+	font-size: .75rem;
+}
+
+body#wolontariat {
+	font-family: "suisse_regular";	
+}
+body#wolontariat .grid {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	box-sizing: border-box;
+}
+body#wolontariat .grid-1-2 {
+	width: 50%;
+
+}
+
+/**
+ * 	Disqus
+ */
+#comments {
+	max-width: 840px;
+	margin: 0 auto;
+}
+
+/**
+ * Footer
+ */ 
+ body#wolontariat .site-info.logo-container img {
+	 max-width: 200px;
+	 display: inline-block;
+ }
+
+ /* Link style */
+ body#wolontariat .site-info.logo-container .mail {
+	 display: inline-block;
+	 border: solid 1px Silver;
+	 padding: 8px 16px;
+	 transition: all .25s ease-out;
+	 margin: 32px 0;
+ }
+
+
+ body#wolontariat .site-info.logo-container .mail:hover {
+	 border-color: Gray;
+ }
+
+/**
+ * Newsletter add
+ */
+ #wolontariat .newsletter-ad {
+	 font-size: .85rem;
+	 font-style: normal;
+	 
+ }
+
+
+ @keyframes shake {
+
+	0%, 69% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	70%, 80% {
+	  transform: translate3d(-3px, 0, 0);
+	}
+
+	75%, 85% {
+		transform: translate3d(3px, 0, 0);
+	}
+
+	90% {
+		transform: translate3d(-2px, 0, 0);
+	}
+  
+	95% {
+		  transform: translate3d(2px, 0, 0);
+	}
+
+
+	100% {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+ #wolontariat .newsletter-ad a {
+	display: inline-block;
+	border: solid 1px Silver;
+	padding: 8px 16px;
+	transition: all .25s ease-out;
+	margin: 16px 0;
+
+	transform: translate3d(0, 0, 0);
+	animation: shake 2s infinite linear;
+}
+#wolontariat .newsletter-ad a:hover {
+	border-color: Gray;
+	background-color: #f1f2f3;
+}
+
+/**
+ * Newsletter form
+ */
+@keyframes appear-nicely {
+
+	0% {
+		opacity: 0;
+
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.appear-nicely {
+	animation: appear-nicely 2s forwards ease-out;
+}
+
+#wolontariat  #newsletter-form {
+	background-color: #24282d;
+	padding: 32px 40px;
+	margin-left: -40px;
+	box-sizing: content-box;
+	width: 100%;
+	color: White;
+	text-align: center;
+	position: relative;
+}
+#wolontariat  #newsletter-form > div {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#wolontariat  #newsletter-form h1 {
+	color: White;
+}
+#wolontariat  #newsletter-form .widget {
+	float: none;
+	width: 100%;
+	display: inline-block;
+	margin: 0 0;
+	padding: 16px;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+#wolontariat  #newsletter-form .widget p img {
+	vertical-align: middle;
+}
+#wolontariat  #newsletter-form .widget .disclaimer {
+	padding: 0 0;
+	margin: 10px 0 0 0;
+	font-size: .625rem;
+}
+#wolontariat  #newsletter-form .email-submit {
+	min-width: 100%;
+	margin-top: 16px;
+}
+
+
+@keyframes vaporize {
+	0% {
+		opacity: 1;
+
+	}
+	100% {
+		opacity: 0;
+		top: -80px;
+	}
+}
+
+#wolontariat  #newsletter-form .notification[aria-hidden="true"] {
+	display: none;
+}
+
+#wolontariat  #newsletter-form .notification[aria-hidden="false"] {
+	display: block;
+	position: absolute;
+	top: -25px;
+	left: 0px;
+}
+
+.vaporize {
+	animation: vaporize 1.5s forwards ease-out;
+}
+
+@media screen and (min-width: 768px) {
+	body#wolontariat .site-info.logo-container {
+		min-height: 150px;
+		border-right: solid 1px Silver;
+		padding-top: 32px
+	}
+
+	body#wolontariat .site-info.logo-container img {
+		max-width: 200px;
+		display: block;
+	}
+
+	body#wolontariat .site-info.text-container {
+		text-align: right;
+		padding-top: 25px;
+		font-size: .625rem;
+	}
+
+	body#wolontariat .grid-md-1-2 {
+		width: 50%;
+	}
+
+	body#wolontariat .site-info.logo-container .grid { 
+		vertical-align: middle;
+	}
+	body#wolontariat .site-info.logo-container div:first-child {
+		text-align: left;
+	}
+	body#wolontariat .site-info.logo-container div:last-child {
+		text-align: right;
+		padding-right: 32px;
+	}
+
+	body#wolontariat .site-info.logo-container .mail {
+		margin: 0 0;
+		padding: 2px 10px;
+	}
+
+	#wolontariat  #newsletter-form > div {
+		text-align: left;
+	}
+	#wolontariat  #newsletter-form .widget {
+		width: 50%;
+	}
+
+	#wolontariat  #newsletter-form .email-submit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		min-width: 85px;
+		margin-top: 0px;
+	}
+}
